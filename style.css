@@ -1,0 +1,220 @@
+body {
+    background-color: #0d0d0d; /* Even darker background */
+    color: #e0e0e0; /* Light grey text */
+    font-family: 'Inter', sans-serif; /* Fireship font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px; /* Increased from 700px */
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    padding: 50px 0 30px; /* More space at the top */
+}
+
+header h1 {
+    font-family: 'Roboto Mono', monospace; /* Monospace for the title, like Fireship's logo */
+    font-size: 3.5em; /* Larger title */
+    color: #ffffff; /* White color for the title */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(0,0,0,0.5); /* White glow effect */
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#app-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a; /* Slightly lighter card background */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Card shadow */
+    border: 1px solid #333;
+    width: 100%; /* Ensure it tries to fill the container */
+    max-width: 800px; /* Increased from previous implicit/smaller value */
+}
+
+#app-icon {
+    width: 120px; /* Adjusted size */
+    height: 120px;
+    background-color: #222; /* Darker icon background */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 15px; 
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #ffffff; /* White color for placeholder text/icon content */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow */
+}
+
+#app-description {
+    font-size: 1.1em;
+    max-width: 750px; /* Increased from 550px */
+    color: #b0b0b0; /* Lighter description text */
+    margin-bottom: 0; /* Remove bottom margin if it's the last element */
+    text-align: left; /* Align text to the left for better readability of lists */
+}
+
+#app-description h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #ff3b81; /* Fireship-like pink/purple accent */
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center; /* Center main description heading */
+}
+
+#app-description h3 {
+    font-family: 'Roboto Mono', monospace;
+    color: #00bcd4; /* Fireship-like cyan accent */
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+#app-description h4 {
+    color: #e0e0e0; /* Light grey for sub-subheadings */
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#app-description ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin-bottom: 15px;
+}
+
+#app-description li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+#app-description li strong {
+    color: #f0f0f0; /* Brighter color for strong text */
+}
+
+#app-description p {
+    margin-bottom: 15px;
+}
+
+.app-info-links {
+    margin-top: 25px; /* Add space above the links */
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.app-info-links a:not(.btn),
+.app-info-links span { /* Apply #aaa to links that are not buttons, and to spans */
+    color: #aaa; /* Slightly brighter for more prominence */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.app-info-links a:hover {
+    color: #fff; /* White on hover */
+    text-decoration: underline;
+}
+
+/* Basic button styling (placeholder) */
+.btn {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ff3b81;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 8px rgba(255, 59, 129, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e02a70;
+    transform: translateY(-2px);
+}
+
+/* Privacy Page Specific Styles */
+.privacy-content {
+    background-color: #1a1a1a; /* Similar card background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.privacy-content h1, /* Targets h1 within header of privacy page */
+.privacy-content h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #ff3b81; /* Main accent color */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.privacy-content h1 { /* Specifically for the main page title if needed */
+    font-size: 2.5em; /* Adjust as needed for privacy page title */
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.privacy-content h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #383838;
+    padding-bottom: 8px;
+}
+
+.privacy-content p {
+    color: #b0b0b0;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.privacy-content strong {
+    color: #e0e0e0;
+}
+
+.privacy-link {
+    color: #00bcd4; /* Cyan accent for links */
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    color: #80deea; /* Lighter cyan on hover */
+    text-decoration: underline;
+}
+
+.back-link-container {
+    text-align: center;
+    margin-top: 30px;
+} 
